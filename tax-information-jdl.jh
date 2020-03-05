@@ -1,0 +1,21 @@
+enum Frequency {
+    ANNUAL, MONTHLY
+}
+
+entity TaxInformation {
+	taxYear Integer required min(2017) max(2018),
+	age Integer required max(150),
+    totalEarnings Long required,
+    frequency Frequency required,
+    numberOfMedicalAidMembers Integer required max(30)
+}
+
+// Set pagination options
+paginate TaxInformation with infinite-scroll
+paginate TaxInformation with pagination
+
+// Use Data Transfert Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all
+service all with serviceImpl

@@ -1,0 +1,60 @@
+{
+    "name": "TaxInformation",
+    "fields": [
+        {
+            "fieldName": "taxYear",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required",
+                "min",
+                "max"
+            ],
+            "fieldValidateRulesMin": "2017",
+            "fieldValidateRulesMax": "2018"
+        },
+        {
+            "fieldName": "age",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required",
+                "max"
+            ],
+            "fieldValidateRulesMax": "150"
+        },
+        {
+            "fieldName": "totalEarnings",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "frequency",
+            "fieldType": "Frequency",
+            "fieldValues": "ANNUAL,MONTHLY",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "numberOfMedicalAidMembers",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required",
+                "max"
+            ],
+            "fieldValidateRulesMax": "30"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200225184300",
+    "entityTableName": "tax_information",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,46 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="taxInformation">
+            <h2><span>Tax Information</span> {{ taxInformation.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Tax Year</span></dt>
+                <dd>
+                    <span>{{ taxInformation.taxYear }}</span>
+                </dd>
+                <dt><span>Age</span></dt>
+                <dd>
+                    <span>{{ taxInformation.age }}</span>
+                </dd>
+                <dt><span>Total Earnings</span></dt>
+                <dd>
+                    <span>{{ taxInformation.totalEarnings }}</span>
+                </dd>
+                <dt><span>Frequency</span></dt>
+                <dd>
+                    <span>{{ taxInformation.frequency }}</span>
+                </dd>
+                <dt><span>Number Of Medical Aid Members</span></dt>
+                <dd>
+                    <span>{{ taxInformation.numberOfMedicalAidMembers }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/tax-information', taxInformation.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

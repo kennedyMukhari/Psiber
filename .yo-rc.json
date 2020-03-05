@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "kennedy.co.za"
+    },
+    "jhipsterVersion": "6.7.1",
+    "applicationType": "monolith",
+    "baseName": "psiber_assessment",
+    "packageName": "kennedy.co.za",
+    "packageFolder": "kennedy/co/za",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NjkzOTVmZTExNmIxZTllYmU0ZmU5M2FiZjlmMWE1N2ZjZDJjMTlmOThkZmI0OTQyY2EzYzVkM2ViZmNhMTdmYTVkMTJhMmYyMTRhMTgxNDIzYjg3YWYzMTE0NWE0NzIxOGU0MTVlZjI2NDE3Yzg4ZjhiNDk0ZWY0ZjAxNjFhODc=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1582553174939,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
